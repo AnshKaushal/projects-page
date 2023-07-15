@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+  <div class="flex flex-col items-center justify-center h-screen">
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+          <img alt="feature" class="object-contain object-center h-full w-full" src="<%= project[0].image %>">
+        </div>
+        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+            <div
+              class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
+                  style="text-decoration: underline;">Title</span> : <%= project[0].title %>
+              </h2>
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
+                  style="text-decoration: underline;">Description</span> : <%= project[0].description %>
+              </h2>
+
+            </div>
+          </div>
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+            <div
+              class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>                            
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
+                  style="text-decoration: underline;">Features</span> : <%= project[0].features %>
+              </h2>
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
+                  style="text-decoration: underline;">Technologies</span> : <%= project[0].technologies %>
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+            <div
+              class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
+                style="text-decoration: underline;">Results</span> : <%= project[0].results %>
+            </h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
+              style="text-decoration: underline;">Lessons Learnt</span> : <%= project[0].lessons %>
+          </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-1">
+        <button
+          class="ml-4 inline-flex text-gray-900 bg-blue-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg" onclick="window.open('<%= project[0].link %>', '_blank')">Link To Project
+        </button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" onclick="window.location.href = '/projects'">
+          Back
+        </button>
+      </div>
+    </section>
+    <%- include('partials/footer') %>
+  </div>
