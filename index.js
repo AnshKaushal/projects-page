@@ -5,8 +5,8 @@ const path = require('path')
 const app = express()
 
 app.set("view engine", "ejs")
-app.use(express.static("views/partials"))
-app.use(express.static("public"))
+app.use(express.static(path.join(__dirname + "/views/partials")))
+app.use(express.static(path.join(__dirname + "/public")))
 app.set("views", path.join(__dirname, "views"))
 const port = 3000
 const connection = mysql.createConnection(process.env.DATABASE_URL)
