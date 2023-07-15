@@ -15,10 +15,10 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-xl title-font font-medium mb-3"><span
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
                   style="text-decoration: underline;">Title</span> : <%= project[0].title %>
               </h2>
-              <h2 class="text-gray-900 text-xl title-font font-medium mb-3"><span
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
                   style="text-decoration: underline;">Description</span> : <%= project[0].description %>
               </h2>
 
@@ -32,10 +32,10 @@
               </svg>                            
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-xl title-font font-medium mb-3"><span
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
                   style="text-decoration: underline;">Features</span> : <%= project[0].features %>
               </h2>
-              <h2 class="text-gray-900 text-xl title-font font-medium mb-3"><span
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
                   style="text-decoration: underline;">Technologies</span> : <%= project[0].technologies %>
               </h2>
             </div>
@@ -50,21 +50,21 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h1 class="text-gray-900 text-xl title-font font-medium mb-3"><span
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
                 style="text-decoration: underline;">Results</span> : <%= project[0].results %>
-            </h1>
-            <h1 class="text-gray-900 text-xl title-font font-medium mb-3"><span
+            </h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><span
               style="text-decoration: underline;">Lessons Learnt</span> : <%= project[0].lessons %>
-          </h1>
+          </h2>
             </div>
           </div>
         </div>
       </div>
       <div class="flex justify-center mt-1">
         <button
-          class="ml-4 inline-flex text-gray-900 bg-blue-400 border-0 py-4 px-9 focus:outline-none hover:bg-gray-500 rounded text-2xl" onclick="window.open('<%= project[0].link %>', '_blank')">Link To Project
+          class="ml-4 inline-flex text-gray-900 bg-blue-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg" onclick="window.open('<%= project[0].link %>', '_blank')">Link To Project
         </button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-4 px-9 focus:outline-none hover:bg-gray-200 rounded text-2xl" onclick="window.location.href = '/projects'">
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" onclick="window.location.href = '/projects'">
           Back
         </button>
       </div>
